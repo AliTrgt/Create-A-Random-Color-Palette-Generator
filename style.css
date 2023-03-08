@@ -1,0 +1,136 @@
+/*Import Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #E3F2DD;
+}
+
+.container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .color {
+    background: #fff;
+    list-style: none;
+    border-radius: 6px;
+    text-align: center;
+    margin:13px;
+    padding: 7px;
+    box-shadow: 0 10px 20px rgba(52,87,220,0.08);
+    cursor:pointer;
+    transition: transform 0.3s ease;
+}
+.container .color:active{
+    transform: scale(0.95);
+
+}
+
+.color .rect-box {
+    width: 185px;
+    height: 188px; 
+    background: #8A6CFF;
+    border-radius: 5px;
+
+}
+
+.color:hover .rect-box{
+    filter: brightness(106%);
+}
+
+.color .hex-value  {
+        font-size: 1.15rem;
+        font-weight: 500;
+        display: block;
+        margin:12px 0 8px;
+        color:#444;
+        text-transform: uppercase;
+    }
+
+    .refresh-btn{
+     position:fixed;
+      left:50%;
+      bottom: 40px;
+        outline: none;
+      color:#fff;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 12px 20px;
+      background: #8A6CFF;
+      border:2px solid #fff;
+      cursor: pointer;
+      border-radius: 5px; 
+      box-shadow: 0 15px 25px rgba(52,87,220,0.2);
+      transform: translateX(-50%);
+    }
+
+    @media screen and (max-width:510px) {
+        .container{
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .container .color {
+            background: #fff;
+            list-style: none;
+            border-radius: 6px;
+            text-align: center;
+            margin:13px;
+            padding: 7px;
+            box-shadow: 0 10px 20px rgba(52,87,220,0.08);
+            cursor:pointer;
+            transition: transform 0.3s ease;
+        }
+        .container .color:active{
+            transform: scale(0.95);
+        
+        }
+        
+        .color .rect-box {
+            width: 185px;
+            height: 188px; 
+            background: #8A6CFF;
+            border-radius: 5px;
+        
+        }
+        
+        .color:hover .rect-box{
+            filter: brightness(106%);
+        }
+        
+        .color .hex-value  {
+                font-size: 1.15rem;
+                font-weight: 500;
+                display: block;
+                margin:12px 0 8px;
+                color:#444;
+                text-transform: uppercase;
+            }
+        
+            .refresh-btn{
+             position:fixed;
+              left:50%;
+              bottom: 40px;
+                outline: none;
+              color:#fff;
+              font-size: 1.1rem;
+              font-weight: 500;
+              padding: 12px 20px;
+              background: #8A6CFF;
+              border:2px solid #fff;
+              cursor: pointer;
+              border-radius: 5px; 
+              box-shadow: 0 15px 25px rgba(52,87,220,0.2);
+              transform: translateX(-50%);
+            }
+    }
